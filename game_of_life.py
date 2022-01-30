@@ -2,7 +2,6 @@ import pygame
 import sys
 from settings import *
 from copy import deepcopy
-# 25 - (вертикаль) * 60 - (горизонталь) : размерность клеток
 
 X = 520
 Y = 424
@@ -114,9 +113,6 @@ class App:
             b1, b2, b3 = self.button((X - 230, Y), "Pause"), self.button((X - 120, Y), " Start"), self.button((X - 10, Y), "Clean")
             field.draw()
             pygame.display.flip()
-
-
-print("game_of_life __name__:", __name__)
 
 if __name__ == "__main__":
     app = App()
